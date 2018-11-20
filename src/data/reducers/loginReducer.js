@@ -1,9 +1,21 @@
-let loginReducer=(previousState={status:undefined},action)=>{
+const initialState={
+    logged:true,
+    pending: false,
+}
+let loginReducer=(
+    state=initialState
+    ,action
+    )=>{
     switch(action.type){
-        case "LOG_IN" :
-            return Object.assign({},previousState,action.payload)
+        case 'GET_LOGGED_USER' :
+            return Object.assign({},state,{pending:false})
+        case 'SET_LOGGED_USER' :
+            return Object.assign({},state,{
+                pending:false,
+                logged:action.logged
+            })
         default:
-            return previousState
+            return state
     }
 }
 export default loginReducer

@@ -1,0 +1,49 @@
+.MockBrowser{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(189, 181, 181);
+    nav{
+        flex-basis: 110px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        button{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+         
+            border:1px solid rgb(189, 181, 181);
+        }
+    }
+    .path{
+        margin-left: 10px;
+        padding-left: 10px;
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+        border:1px solid rgb(189, 181, 181);
+        flex:1 0 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .example{
+            color: rgb(139, 132, 132);
+        }
+        .inputWrapper{
+            width: 100%;
+            height: 100%;
+        }
+        input{
+            outline: none;
+            font-size: inherit;
+            width: 100%;
+            height: 100%;
+            line-height: 50px;
+            vertical-align: top;
+            border:none;
+            background: inherit;
+        }
+    }
+}
