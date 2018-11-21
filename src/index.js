@@ -4,8 +4,5 @@ import App from './app'
 import * as serviceWorker from './serviceWorker';
 import './default.css'
 
-
 ReactDOM.render(<App/>, document.getElementById('root'))
-
-
 serviceWorker.unregister();

@@ -1,0 +1,19 @@
+.primary-header{
+    
+    display: flex;
+    h3{
+        width: 400px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav{
+        text-decoration: none;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 2px solid #ccc;
+    }
+}

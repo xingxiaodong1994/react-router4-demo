@@ -7,10 +7,10 @@ class UnauthorizedLayout extends Component{
         return(
             <div className="unauthorized-layout">
                 <div>UnauthorizedLayout组件（登录页面）</div>
-                {/* <Switch>
+                <Switch>
                  <Route path="/auth/login" component={LoginPage} />
                  <Redirect to="/auth/login" />
-                </Switch> */}
+                </Switch>
             </div>
         )
     }

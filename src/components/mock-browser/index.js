@@ -15,8 +15,8 @@ class MockBrowser extends Component{
         })
     }
     componentWillReceiveProps(newProps){
-        console.log(1)
-        console.log(newProps)
+      
+       // console.log(newProps)
         this.setState({
             path:newProps.location.pathname
         })
@@ -36,14 +36,14 @@ class MockBrowser extends Component{
         }
     }
     render(){
-        console.log("MockBrowser组件render")
-        console.log(this.props.location)
-        let{history}=this.props
-        const {goForward,goBacck}=history
+        //console.log("MockBrowser组件render")
+       // console.log(this.props.location)
+        // console.log(this.props.history.go)
+        const { goForward, goBack } = this.props.history
         return (
             <div className="MockBrowser">
                 <nav>
-                    <button className="outline" onClick={goBacck}>后退</button>
+                    <button className="outline" onClick={goBack}>后退</button>
                     <button className="outline" onClick={goForward}>前进</button>
                 </nav>
                 <div className="path">

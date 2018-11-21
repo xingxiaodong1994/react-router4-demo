@@ -1,6 +1,6 @@
 const initialState={
-    logged:true,
-    pending: false,
+    logged:false,
+    pending: true,
 }
 let loginReducer=(
     state=initialState

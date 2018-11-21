@@ -10,13 +10,14 @@ import AnotherLayout from './AnotherLayout'
 class PrimaryLayout extends Component{
     render(){
         const {match}=this.props
+        console.log(this.props)
         return(
-            <div className="primary-header">
+            <div className="primary">
                  <PrimaryHeader />
                  <main>
                     <Switch>
-                        <Route path={`${match.path}`}  exact Component={AppHomePage}/>
-                        <Route path={`${match.path}/notebook`} Component={NoteBookLayout}/>
+                        <Route path={`${match.path}`}  exact component={AppHomePage}/>
+                        <Route path={`${match.path}/notebook`} component={NoteBookLayout}/>
                         <Route path={`${match.path}/another`} component={AnotherLayout} />
                         <Redirect to={`${match.url}`} />
                     </Switch>
