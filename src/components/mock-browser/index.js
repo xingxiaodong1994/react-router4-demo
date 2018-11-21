@@ -38,7 +38,7 @@ class MockBrowser extends Component{
     render(){
         console.log("MockBrowser组件render")
         console.log(this.props.location)
-        let{history,location,match}=this.props
+        let{history}=this.props
         const {goForward,goBacck}=history
         return (
             <div className="MockBrowser">

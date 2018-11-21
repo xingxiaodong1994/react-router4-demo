@@ -1,6 +1,8 @@
 import React ,{Component}from 'react'
 import {Switch,Route,Redirect}from 'react-router-dom'
 
+import PrimaryHeader from '../ui/PrimaryHeader'
+
 import AppHomePage from '../pages/AppHomePage'
 import NoteBookLayout from './NoteBookLayout'
 import AnotherLayout from './AnotherLayout'

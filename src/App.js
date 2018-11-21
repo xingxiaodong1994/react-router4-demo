@@ -17,8 +17,8 @@ export default class App extends Component {
                         <MockBrowser/>
                         <Switch>
                             <Route path="/auth" Component={UnauthorizedLayout}/>
-                            <AuthorizedRoute path="/app" Component={PrimaryLayout}/>
-                            <Redirect to="/auth" />
+                            {/* <AuthorizedRoute path="/app" Component={PrimaryLayout}/> */}
+                            {/* <Redirect to="/auth" /> */}
                         </Switch>
                     </div>
                 </BrowserRouter>  
